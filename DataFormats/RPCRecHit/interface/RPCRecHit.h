@@ -124,6 +124,10 @@ class RPCRecHit : public RecHit2DLocalPos {
     return theTimeError;
   }
 
+  float corrTime() const {
+    return theCorrTime;
+  }
+
   /// Comparison operator, based on the rpcId and the digi time
   bool operator==(const RPCRecHit& hit) const;
 
@@ -136,6 +140,7 @@ class RPCRecHit : public RecHit2DLocalPos {
   LocalPoint theLocalPosition;
   LocalError theLocalError;
   float theTime, theTimeError;
+  float theCorrTime;
 
 };
 #endif
