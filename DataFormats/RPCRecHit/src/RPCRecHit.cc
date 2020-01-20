@@ -52,7 +52,7 @@ RPCRecHit::RPCRecHit(const RPCDetId& rpcId,
 		     const LocalPoint& pos,
 		     const LocalError& err) :  RecHit2DLocalPos(rpcId),
   theRPCId(rpcId), theBx(bx),theFirstStrip(firstStrip), theClusterSize(clustSize), theLocalPosition(pos), theLocalError(err),
-  theTime(0), theTimeError(-1)
+  theTime(0), theTimeError(-1), theCorrTime(0)
 {
 }
 

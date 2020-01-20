@@ -128,6 +128,10 @@ class RPCRecHit : public RecHit2DLocalPos {
     return theCorrTime;
   }
 
+  void setCorrTime(float newTime) {
+    theCorrTime = newTime;
+  }
+
   /// Comparison operator, based on the rpcId and the digi time
   bool operator==(const RPCRecHit& hit) const;
 
